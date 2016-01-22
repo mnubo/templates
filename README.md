@@ -1,2 +1,2 @@
 # templates
-Contains mnubo public data model template and corresponding datasets.
+Contains mnubo public data model templates and corresponding datasets.
