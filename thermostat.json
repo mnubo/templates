@@ -1,0 +1,93 @@
+
+ {
+    "ownerAttributes": {
+        "username": {
+            "displayName": "Username",
+            "name": "username",
+            "type": "TEXT",
+            "lifecycle": "draft",
+            "description": "Owner unique identifier"
+        }
+    },
+    "timeseries": {
+        "thermostat_state": {
+            "displayName": "Thermostat state",
+            "name": "thermostat_state",
+            "type": "BOOLEAN",
+            "lifecycle": "draft",
+            "description": "State of the thermostat (Activated , standby, stopped, ..)"
+        },
+        "temperature": {
+            "displayName": "Temperature measured",
+            "name": "temperature",
+            "type": "FLOAT",
+            "lifecycle": "draft",
+            "description": "Tempereature measure by the device"
+        },
+        "temperature_setpoint": {
+            "displayName": "Temperature ",
+            "name": "temperature_setpoint",
+            "type": "FLOAT",
+            "lifecycle": "draft",
+            "description": "Temperature"
+        },
+        "occupancy": {
+            "displayName": "Occupancy",
+            "name": "Oocupancy",
+            "type": "BOOLEAN",
+            "lifecycle": "draft",
+            "description": "Occupancy measured by the device"
+        }
+    },
+    "objectAttributes": {
+        "color": {
+            "displayName": "Color",
+            "name": "color",
+            "type": "TEXT",
+            "lifecycle": "draft",
+            "description": "Device color"
+        },
+        "country": {
+            "displayName": "Country",
+            "name": "country",
+            "type": "TEXT",
+            "lifecycle": "draft",
+            "description": "Current country location of the device"
+        },
+        "make": {
+            "displayName": "Brand",
+            "name": "make",
+            "type": "TEXT",
+            "lifecycle": "draft",
+            "description": "Device brand"
+        },
+        "max_temperature": {
+            "displayName": "Maximal temperature",
+            "name": "max_temperature",
+            "type": "FLOAT",
+            "lifecycle": "draft",
+            "description": "Maximal treshold temperature"
+        },
+        "year": {
+            "displayName": "Year",
+            "name": "year",
+            "type": "TEXT",
+            "lifecycle": "draft",
+            "description": "Device year"
+        },
+        "model": {
+            "displayName": "Model",
+            "name": "model",
+            "type": "TEXT",
+            "lifecycle": "draft",
+            "description": "Device Model"
+        },
+        "min_temperature": {
+            "displayName": "Minimal temperature",
+            "name": "min_temperature",
+            "type": "FLOAT",
+            "lifecycle": "draft",
+            "description": "Minimal treshold temperature"
+        }
+    }
+}
