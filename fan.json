@@ -1,0 +1,113 @@
+{
+    "ownerAttributes": {
+        "username": {
+            "displayName": "Username",
+            "name": "username",
+            "type": "TEXT",
+            "lifecycle": "draft",
+            "description": "Owner unique identifier"
+        }
+    },
+    "timeseries": {
+        "cfm": {
+            "displayName": "cfm",
+            "name": "cfm",
+            "type": "FLOAT",
+            "lifecycle": "draft",
+            "description": "cfm"
+        },
+        "energy_consumed": {
+            "displayName": "Energy consumed",
+            "name": "energy_consumed",
+            "type": "FLOAT",
+            "lifecycle": "draft",
+            "description": "Energy consumed"
+        },
+        "activation": {
+            "displayName": "Activation state",
+            "name": "activation",
+            "type": "BOOLEAN",
+            "lifecycle": "draft",
+            "description": "aActivation state"
+        },
+        "flow": {
+            "displayName": "flow",
+            "name": "flow",
+            "type": "FLOAT",
+            "lifecycle": "draft",
+            "description": "flow"
+        },
+        "pressure": {
+            "displayName": "Pressure",
+            "name": "prressure",
+            "type": "FLOAT",
+            "lifecycle": "draft",
+            "description": "Pressure"
+        },
+        "rpm": {
+            "displayName": "rpm",
+            "name": "rpm",
+            "type": "FLOAT",
+            "lifecycle": "draft",
+            "description": "rpm"
+        }
+    },
+    "objectAttributes": {
+        "max_rpm": {
+            "displayName": "Maximum speed",
+            "name": "max_rpm",
+            "type": "FLOAT",
+            "lifecycle": "draft",
+            "description": "Maximum speed"
+        },
+        "color": {
+            "displayName": "Color",
+            "name": "color",
+            "type": "TEXT",
+            "lifecycle": "draft",
+            "description": "Device color"
+        },
+        "country": {
+            "displayName": "Country",
+            "name": "country",
+            "type": "TEXT",
+            "lifecycle": "draft",
+            "description": "Current country location of the device"
+        },
+        "make": {
+            "displayName": "Brand",
+            "name": "make",
+            "type": "TEXT",
+            "lifecycle": "draft",
+            "description": "Device brand"
+        },
+        "object_id": {
+            "displayName": "Object id",
+            "name": "object_id",
+            "type": "TEXT",
+            "lifecycle": "draft",
+            "description": "Object unique identifier"
+        },
+        "year": {
+            "displayName": "Year",
+            "name": "year",
+            "type": "TEXT",
+            "lifecycle": "draft",
+            "description": "Device year"
+        },
+        "model": {
+            "displayName": "Model",
+            "name": "model",
+            "type": "TEXT",
+            "lifecycle": "draft",
+            "description": "Model of the device"
+        },
+        "size": {
+            "displayName": "Size",
+            "name": "size",
+            "type": "FLOAT",
+            "lifecycle": "draft",
+            "description": "Fan size"
+        }
+    }
+}
