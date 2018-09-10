@@ -1,0 +1,3759 @@
+{
+    "objectTypes": [
+        {
+            "key": "heat_pump",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "dis",
+                    "displayName": "display name of equipment",
+                    "description": "Dis values should be short (less than 30 or 40 characters), but fully descriptive of the entity",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "site_ref",
+                    "displayName": "site reference",
+                    "description": "Reference of site that the piece of equipment belongs to. The recommended value is the combination x_device_id of site and its 'dis'",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "chilled_water_plant",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "dis",
+                    "displayName": "display name of equipment",
+                    "description": "Dis values should be short (less than 30 or 40 characters), but fully descriptive of the entity",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "site_ref",
+                    "displayName": "site reference",
+                    "description": "Reference of site that the piece of equipment belongs to. The recommended value is the combination x_device_id of site and its 'dis'",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "vav",
+            "displayName": "variable air volume assets",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "adu_ref",
+                    "displayName": "reference of ADU",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "chilled_water_plant_ref",
+                    "displayName": "reference plant supplying chilled water",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "dis",
+                    "displayName": "display name of equipment",
+                    "description": "Dis values should be short (less than 30 or 40 characters), but fully descriptive of the entity",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "hot_water_plant_ref",
+                    "displayName": "reference plant supplying hot water",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "is_dual_duct",
+                    "displayName": "ductwork configuration",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "BOOLEAN",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "is_hvac",
+                    "displayName": "",
+                    "description": "indicates if it's an HVAV asset",
+                    "type": {
+                        "highLevelType": "BOOLEAN",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "is_pressure_dependent",
+                    "displayName": "control based on duct static pressure",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "BOOLEAN",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "is_pressure_independent",
+                    "displayName": "control based on duct static pressure",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "BOOLEAN",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "is_single_duct",
+                    "displayName": "ductwork configuration",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "BOOLEAN",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "steam_plant_ref",
+                    "displayName": "reference plant supplying steam",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "vav_types",
+                    "displayName": "",
+                    "description": "one of following types:'coolOnly','series fanPowered elecReheat','series fanPowered hotWaterReheat','parallel fanPowered elecReheat' and 'parallel fanPowered hotWaterReheat'",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "elec_meter",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "dis",
+                    "displayName": "display name of equipment",
+                    "description": "Dis values should be short (less than 30 or 40 characters), but fully descriptive of the entity",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "is_site_meter",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "BOOLEAN",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "site_ref",
+                    "displayName": "site reference",
+                    "description": "Reference of site that the piece of equipment belongs to. The recommended value is the combination x_device_id of site and its 'dis'",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "sub_meter_of",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "site",
+            "displayName": "a building with an address",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "area_in_square_feet",
+                    "displayName": "size of site in square feet",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "DOUBLE",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "area_in_square_meter",
+                    "displayName": "size of site in square meter",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "DOUBLE",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "dis",
+                    "displayName": "display name of equipment",
+                    "description": "Dis values should be short (less than 30 or 40 characters), but fully descriptive of the entity",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "site_ref",
+                    "displayName": "site reference",
+                    "description": "Reference of site that the piece of equipment belongs to. The recommended value is the combination x_device_id of site and its 'dis'",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "tz",
+                    "displayName": "timezone of site",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "year_built",
+                    "displayName": "4-digit year in which the building was constructed",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "steam_plant",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "dis",
+                    "displayName": "display name of equipment",
+                    "description": "Dis values should be short (less than 30 or 40 characters), but fully descriptive of the entity",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "site_ref",
+                    "displayName": "site reference",
+                    "description": "Reference of site that the piece of equipment belongs to. The recommended value is the combination x_device_id of site and its 'dis'",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "fcu",
+            "displayName": "fan coil unit",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "cooling_method",
+                    "displayName": "",
+                    "description": "one of the following values: chillWaterCool and dxCool",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "dis",
+                    "displayName": "display name of equipment",
+                    "description": "Dis values should be short (less than 30 or 40 characters), but fully descriptive of the entity",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "heating_method",
+                    "displayName": "",
+                    "description": "one of the following values: elecHeat, hotWaterHeat, steamHeat and gasHeat",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "site_ref",
+                    "displayName": "site reference",
+                    "description": "Reference of site that the piece of equipment belongs to. The recommended value is the combination x_device_id of site and its 'dis'",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "heat_exchanger",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "dis",
+                    "displayName": "display name of equipment",
+                    "description": "Dis values should be short (less than 30 or 40 characters), but fully descriptive of the entity",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "equip_ref",
+                    "displayName": "reference of equipment",
+                    "description": "The value of equip_ref is the device_id if the VFD is a sub-component of a larger piece of equipment, for example Fans, pumps and compressors.",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "ahu",
+            "displayName": "Air Handler Unit",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "chilled_water_plant_ref",
+                    "displayName": "reference plant supplying chilled water",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "cooling_method",
+                    "displayName": "",
+                    "description": "one of the following values: chillWaterCool and dxCool",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "dis",
+                    "displayName": "display name of equipment",
+                    "description": "Dis values should be short (less than 30 or 40 characters), but fully descriptive of the entity",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "heating_method",
+                    "displayName": "",
+                    "description": "one of the following values: elecHeat, hotWaterHeat, steamHeat and gasHeat",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "hot_water_plant_ref",
+                    "displayName": "reference plant supplying hot water",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "is_constant_volume",
+                    "displayName": "",
+                    "description": "indicates if AHU's fan is single speed",
+                    "type": {
+                        "highLevelType": "BOOLEAN",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "is_dual_duct",
+                    "displayName": "ductwork configuration",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "BOOLEAN",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "is_mau",
+                    "displayName": "makeup air unit",
+                    "description": "indicates if it's a makeup air unit",
+                    "type": {
+                        "highLevelType": "BOOLEAN",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "is_single_duct",
+                    "displayName": "ductwork configuration",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "BOOLEAN",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "is_variable_volume",
+                    "displayName": "",
+                    "description": "indicates if AHU's fans ia a VFD",
+                    "type": {
+                        "highLevelType": "BOOLEAN",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "site_ref",
+                    "displayName": "site reference",
+                    "description": "Reference of site that the piece of equipment belongs to. The recommended value is the combination x_device_id of site and its 'dis'",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "steam_plant_ref",
+                    "displayName": "reference plant supplying steam",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "hot_water_plant",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "dis",
+                    "displayName": "display name of equipment",
+                    "description": "Dis values should be short (less than 30 or 40 characters), but fully descriptive of the entity",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "site_ref",
+                    "displayName": "site reference",
+                    "description": "Reference of site that the piece of equipment belongs to. The recommended value is the combination x_device_id of site and its 'dis'",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "boiler",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "dis",
+                    "displayName": "display name of equipment",
+                    "description": "Dis values should be short (less than 30 or 40 characters), but fully descriptive of the entity",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "equip_ref",
+                    "displayName": "reference of equipment",
+                    "description": "The value of equip_ref is the device_id if the VFD is a sub-component of a larger piece of equipment, for example Fans, pumps and compressors.",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "fuel_type",
+                    "displayName": "",
+                    "description": "'oil' or 'gas'",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "heating_mode",
+                    "displayName": "",
+                    "description": "'hot water' or 'steam'",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "chiller",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "cooling_capacity",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "dis",
+                    "displayName": "display name of equipment",
+                    "description": "Dis values should be short (less than 30 or 40 characters), but fully descriptive of the entity",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "equip_ref",
+                    "displayName": "reference of equipment",
+                    "description": "The value of equip_ref is the device_id if the VFD is a sub-component of a larger piece of equipment, for example Fans, pumps and compressors.",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "is_absorption",
+                    "displayName": "",
+                    "description": "Indicates a chiller which uses absorption driven by hot water (as opposed to vapor compression).",
+                    "type": {
+                        "highLevelType": "BOOLEAN",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "is_air_cooled",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "BOOLEAN",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "is_water_cooled",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "BOOLEAN",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "vapor_compression_method",
+                    "displayName": "",
+                    "description": "one of following types:'reciprocal','screw' and 'centrifugal'",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "uv",
+            "displayName": "units ventilator",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "cooling_method",
+                    "displayName": "",
+                    "description": "one of the following values: chillWaterCool and dxCool",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "dis",
+                    "displayName": "display name of equipment",
+                    "description": "Dis values should be short (less than 30 or 40 characters), but fully descriptive of the entity",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "heating_method",
+                    "displayName": "",
+                    "description": "one of the following values: elecHeat, hotWaterHeat, steamHeat and gasHeat",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "site_ref",
+                    "displayName": "site reference",
+                    "description": "Reference of site that the piece of equipment belongs to. The recommended value is the combination x_device_id of site and its 'dis'",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "lighting",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "dis",
+                    "displayName": "display name of equipment",
+                    "description": "Dis values should be short (less than 30 or 40 characters), but fully descriptive of the entity",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "lighting_group_ref",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "site_ref",
+                    "displayName": "site reference",
+                    "description": "Reference of site that the piece of equipment belongs to. The recommended value is the combination x_device_id of site and its 'dis'",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "hvac",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "dis",
+                    "displayName": "display name of equipment",
+                    "description": "Dis values should be short (less than 30 or 40 characters), but fully descriptive of the entity",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "elect_meter_ref",
+                    "displayName": "reference of electricity meter",
+                    "description": "It indicates if the equipment is load measured by a specific meter",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "site_ref",
+                    "displayName": "site reference",
+                    "description": "Reference of site that the piece of equipment belongs to. The recommended value is the combination x_device_id of site and its 'dis'",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "vdf",
+            "displayName": "variable frequency drive",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "dis",
+                    "displayName": "display name of equipment",
+                    "description": "Dis values should be short (less than 30 or 40 characters), but fully descriptive of the entity",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "equip_ref",
+                    "displayName": "reference of equipment",
+                    "description": "The value of equip_ref is the device_id if the VFD is a sub-component of a larger piece of equipment, for example Fans, pumps and compressors.",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "tank",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "dis",
+                    "displayName": "display name of equipment",
+                    "description": "Dis values should be short (less than 30 or 40 characters), but fully descriptive of the entity",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "equip_ref",
+                    "displayName": "reference of equipment",
+                    "description": "The value of equip_ref is the device_id if the VFD is a sub-component of a larger piece of equipment, for example Fans, pumps and compressors.",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "storage_material_type",
+                    "displayName": "",
+                    "description": "hot water, domestic water, condensate water, gas and oil",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "cooling_tower",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "dis",
+                    "displayName": "display name of equipment",
+                    "description": "Dis values should be short (less than 30 or 40 characters), but fully descriptive of the entity",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "equip_ref",
+                    "displayName": "reference of equipment",
+                    "description": "The value of equip_ref is the device_id if the VFD is a sub-component of a larger piece of equipment, for example Fans, pumps and compressors.",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "is_closed_loop",
+                    "displayName": "",
+                    "description": "Indicates coolingTower which keeps the working fluid separate from the fluid used for heat transfer into the atmosphere.",
+                    "type": {
+                        "highLevelType": "BOOLEAN",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "is_open_loop",
+                    "displayName": "",
+                    "description": "Indicates coolingTower which uses the working fluid itself for evaporation into the atmosphere.",
+                    "type": {
+                        "highLevelType": "BOOLEAN",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        }
+    ],
+    "eventTypes": [
+        {
+            "key": "get_boiler_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "circ_pump_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "condensate_pump_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "enable_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "run_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "condenser_water_bypass_valve_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "condenser_water_bypass_valve_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "config_chilled_water_plant",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "chilled_water_delta_pressure_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_leaving_temp_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_chilled_water_plant_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "chilled_water_bypass_valve_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "chilled_water_delta_flow",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_delta_pressure",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_delta_pressure_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_delta_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_delta_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_entering_flow",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_entering_pressure",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_entering_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_entering_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_leaving_flow",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_leaving_pressure",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_leaving_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_leaving_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_leaving_temp_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_bypass_valve_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "condenser_water_delta_pressure",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_chiller_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "chilled_water_delta_flow",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_delta_pressure",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_delta_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_delta_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_entering_flow",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_entering_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_entering_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_leaving_flow",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_leaving_pressure",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_leaving_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_leaving_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_leaving_temp_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_valve_isolation",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chiller_condenser_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "condenser_refrig_pressure",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_refrig_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_refrig_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_entering_flow",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_entering_pressure",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_entering_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_entering_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_leaving_flow",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_leaving_pressure",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_leaving_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_leaving_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_valve_isolation",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "efficiency",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "DOUBLE"
+                    }
+                },
+                {
+                    "key": "enable_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "energy",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "DOUBLE"
+                    }
+                },
+                {
+                    "key": "evaporator_refrig_pressure",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "evaporator_refrig_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "evaporator_refrig_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "load",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "DOUBLE"
+                    }
+                },
+                {
+                    "key": "power",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "DOUBLE"
+                    }
+                },
+                {
+                    "key": "run_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_return_air_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "return_air_co2",
+                    "displayName": "return air co2",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "return_air_damper",
+                    "displayName": "return air damper state/mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "return_air_fan",
+                    "displayName": "return air fan status/mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "return_air_flow",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "return_air_humidity",
+                    "displayName": "humidity in percentage",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "return_air_pressure",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "return_air_temp_in_celsius",
+                    "displayName": "return air temperature in Celsius",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "return_air_temp_in_fahrenheit",
+                    "displayName": "return air temperature in Fahrenheit",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_zone_air_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "zone",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "zone_air_co2",
+                    "displayName": "zone air co2",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "zone_air_co2_sp",
+                    "displayName": "zone air co2 setpoint",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "zone_air_humidity",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "zone_air_temp_effective_sp",
+                    "displayName": "zone air temperature effective setpoint",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "zone_air_temp_in_celsius",
+                    "displayName": "zone air temperature in Celsius",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "zone_air_temp_in_fahrenheit",
+                    "displayName": "zone air temperature in Fahrenheit",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "zone_air_temp_occ_cooling_sp",
+                    "displayName": "zone air cooling setpoint in occupied mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "zone_air_temp_occ_heating_sp",
+                    "displayName": "zone air heating setpoint in occupied mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "zone_air_temp_standby_cooling_sp",
+                    "displayName": "zone air cooling setpoint in standby mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "zone_air_temp_standby_heating_sp",
+                    "displayName": "zone air heating setpoint in standy mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "zone_air_temp_uocc_cooling_sp",
+                    "displayName": "zone air cooling setpoint in unoccupied mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "zone_air_temp_uocc_heating_sp",
+                    "displayName": "zone air heating setpoint in unoccupied mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_hot_water_plant_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "flue_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "flue_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "hot_water_bypass_valve_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "hot_water_delta_flow",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "hot_water_delta_pressure",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "hot_water_delta_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "hot_water_delta_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "hot_water_entering_flow",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "hot_water_entering_pressure",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "hot_water_entering_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "hot_water_entering_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "hot_water_leaving_flow",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "hot_water_leaving_pressure",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "hot_water_leaving_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "hot_water_leaving_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "hot_water_leaving_temp_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "hot_water_mixing_valve_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "is_primary_loop",
+                    "displayName": "",
+                    "description": "Indicates equipment and points which are associated with a chiller or boiler plant's primary loop - the pipework within the central plant.",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "is_secondary_loop",
+                    "displayName": "",
+                    "description": "Indicates equipment and points which are associated with a chiller or boiler plant's secondary loop - the pipework from the central plant to the building.",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "makeup_water_flow",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "outside_air_damper",
+                    "displayName": "outside air damper state/mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "hot_water_plant_outside_air_damper_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "is_primary_loop",
+                    "displayName": "",
+                    "description": "Indicates equipment and points which are associated with a chiller or boiler plant's primary loop - the pipework within the central plant.",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "is_secondary_loop",
+                    "displayName": "",
+                    "description": "Indicates equipment and points which are associated with a chiller or boiler plant's secondary loop - the pipework from the central plant to the building.",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "outside_air_damper",
+                    "displayName": "outside air damper state/mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "vdf_freq_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "vdf_freq",
+                    "displayName": "vdf frequence",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "return_air_damper_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "return_air_damper",
+                    "displayName": "return air damper state/mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "chiller_enable_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "enable_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "face_bypass_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "face_bypass_state",
+                    "displayName": "ahu face bypass state",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "steam_plant_outside_air_damper_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "is_primary_loop",
+                    "displayName": "",
+                    "description": "Indicates equipment and points which are associated with a chiller or boiler plant's primary loop - the pipework within the central plant.",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "is_secondary_loop",
+                    "displayName": "",
+                    "description": "Indicates equipment and points which are associated with a chiller or boiler plant's secondary loop - the pipework from the central plant to the building.",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "outside_air_damper",
+                    "displayName": "outside air damper state/mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "exhaust_air_fan_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "exhaust_air_fan",
+                    "displayName": "exhaust air fan status/mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_mix_air_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "mix_air_temp_in_celsius",
+                    "displayName": "mix air temperature in Celsius",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "mix_air_temp_in_fahrenheit",
+                    "displayName": "mix air temperature in Fahrenheit",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_steam_plant_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "condensate_entering_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condensate_entering_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "flue_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "flue_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "is_primary_loop",
+                    "displayName": "",
+                    "description": "Indicates equipment and points which are associated with a chiller or boiler plant's primary loop - the pipework within the central plant.",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "is_secondary_loop",
+                    "displayName": "",
+                    "description": "Indicates equipment and points which are associated with a chiller or boiler plant's secondary loop - the pipework from the central plant to the building.",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "makeup_water_flow",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "outside_air_damper",
+                    "displayName": "outside air damper state/mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "steam_bypass_valve_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "steam_delta_flow",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "steam_delta_pressure",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "steam_delta_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "steam_delta_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "steam_entering_flow",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "steam_entering_pressure",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "steam_header_pressure",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "steam_leaving_flow",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "steam_leaving_pressure",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "steam_leaving_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "steam_leaving_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "steam_leaving_temp_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "steam_mixing_valve_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_heat_exchanger_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "chilled_water_leaving_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "chilled_water_leaving_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_entering_flow",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_entering_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_entering_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_leaving_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_leaving_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_exhaust_air_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "exhaust_air_damper",
+                    "displayName": "exhaust air damper state/mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "exhaust_air_fan",
+                    "displayName": "exhaust air fan status/mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "chiller_run_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "run_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "boiler_circ_pump_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "circ_pump_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_outside_air_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "outside_air_damper",
+                    "displayName": "outside air damper state/mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "outside_air_flow",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "outside_air_flow_sp",
+                    "displayName": "outside aire flow setpoint",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "outside_air_humidity",
+                    "displayName": "humidity in percentage",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "outside_air_pressure",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "outside_air_temp_in_celsius",
+                    "displayName": "outside air temperature in Celsius",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "outside_air_temp_in_fahrenheit",
+                    "displayName": "outside air temperature in Fahrenheit",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "outside_air_damper_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "outside_air_damper",
+                    "displayName": "outside air damper state/mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "hot_water_bypass_valve_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "hot_water_bypass_valve_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "is_primary_loop",
+                    "displayName": "",
+                    "description": "Indicates equipment and points which are associated with a chiller or boiler plant's primary loop - the pipework within the central plant.",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "is_secondary_loop",
+                    "displayName": "",
+                    "description": "Indicates equipment and points which are associated with a chiller or boiler plant's secondary loop - the pipework from the central plant to the building.",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "vav_air_damper_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "air_damper_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "bypass_damper_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "bypass_damper_state",
+                    "displayName": "ahu bypass damper state",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "chiller_load_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "load",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "DOUBLE"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "chilled_water_valve_isolation_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "chilled_water_valve_isolation",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_face_bypass",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "face_bypass_state",
+                    "displayName": "ahu face bypass state",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "vdf_enable_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "enable_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "config_steam_plant",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "is_primary_loop",
+                    "displayName": "",
+                    "description": "Indicates equipment and points which are associated with a chiller or boiler plant's primary loop - the pipework within the central plant.",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "is_secondary_loop",
+                    "displayName": "",
+                    "description": "Indicates equipment and points which are associated with a chiller or boiler plant's secondary loop - the pipework from the central plant to the building.",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "steam_leaving_temp_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_discharge_air_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "discharge_air_fan",
+                    "displayName": "discharge air fan state/mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "discharge_air_flow",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "discharge_air_humidity",
+                    "displayName": "humidity in percentage",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "discharge_air_pressure",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "discharge_air_temp_in_celsius",
+                    "displayName": "discharge air temperature in Celsius",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "discharge_air_temp_in_fahrenheit",
+                    "displayName": "discharge air temperature in Fahrenheit",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "boiler_run_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "run_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "conditioning_heat_stage_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "conditioning_heat_stage",
+                    "displayName": "conditioning heat stage",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_vdf_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "enable_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "run_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "vdf_freq",
+                    "displayName": "vdf frequence",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "vdf_speed",
+                    "displayName": "vdf speed",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "conditioning_cool_stage_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "conditioning_cool_stage",
+                    "displayName": "conditioning cool stage",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_cooling_tower_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "condenser_water_entering_flow",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_entering_pressure",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_entering_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_entering_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_leaving_flow",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_leaving_pressure",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_leaving_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_leaving_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "condenser_water_leaving_temp_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "cooling_tower_fan",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "update_outside_air_flow_setpoint",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "outside_air_flow_sp",
+                    "displayName": "outside aire flow setpoint",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "conditioning_humidifier_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "conditioning_filter",
+                    "displayName": "conditioning filter",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "chiller_condenser_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "chiller_condenser_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_vav_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "air_damper_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "air_fan",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "air_fan_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "air_flow_effective_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "air_flow_max_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "air_flow_min_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "air_flow_reheating_max_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "air_flow_standby_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "air_low",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "air_presseur",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "discharge_air_temp_in_celsius",
+                    "displayName": "discharge air temperature in Celsius",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "discharge_air_temp_in_fahrenheit",
+                    "displayName": "discharge air temperature in Fahrenheit",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "duct_area_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "entering_air_temp_in_celsius",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "entering_air_temp_in_fahrenheit",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "perimeter_reheat_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "reheat_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "vav_mode_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "heat_wheel_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "heatwheel_state",
+                    "displayName": "ahu heatwheel state",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "chilled_water_bypass_valve_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "chilled_water_bypass_valve_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "vav_perimeter_heat_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "perimeter_reheat_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "config_hot_water_plant",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "hot_water_leaving_temp_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "is_primary_loop",
+                    "displayName": "",
+                    "description": "Indicates equipment and points which are associated with a chiller or boiler plant's primary loop - the pipework within the central plant.",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "is_secondary_loop",
+                    "displayName": "",
+                    "description": "Indicates equipment and points which are associated with a chiller or boiler plant's secondary loop - the pipework from the central plant to the building.",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "vdf_run_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "run_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_freeze_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "freeze_state",
+                    "displayName": "ahu freeze state",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "return_air_fan_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "return_air_fan",
+                    "displayName": "return air fan status/mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_conditioning_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "conditioning_cool_stage",
+                    "displayName": "conditioning cool stage",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "conditioning_filter",
+                    "displayName": "conditioning filter",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "conditioning_heat_stage",
+                    "displayName": "conditioning heat stage",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "conditioning_humidifier_state",
+                    "displayName": "conditioning humidifier state",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "config_zone",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "zone",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "zone_air_co2_sp",
+                    "displayName": "zone air co2 setpoint",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "zone_air_temp_effective_sp",
+                    "displayName": "zone air temperature effective setpoint",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "zone_air_temp_occ_cooling_sp",
+                    "displayName": "zone air cooling setpoint in occupied mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "zone_air_temp_occ_heating_sp",
+                    "displayName": "zone air heating setpoint in occupied mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "zone_air_temp_standby_cooling_sp",
+                    "displayName": "zone air cooling setpoint in standby mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "zone_air_temp_standby_heating_sp",
+                    "displayName": "zone air heating setpoint in standy mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "zone_air_temp_uocc_cooling_sp",
+                    "displayName": "zone air cooling setpoint in unoccupied mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "zone_air_temp_uocc_heating_sp",
+                    "displayName": "zone air heating setpoint in unoccupied mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "exhaust_air_damper_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "exhaust_air_damper",
+                    "displayName": "exhaust air damper state/mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_light_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "is_light_on",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "light_dimmer_percentage",
+                    "displayName": "",
+                    "description": "0% -100%",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "light_level",
+                    "displayName": "",
+                    "description": "indicating current lighting level measured in 'lux' or 'lumen'",
+                    "type": {
+                        "highLevelType": "DOUBLE"
+                    }
+                },
+                {
+                    "key": "occupancy_indicator",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_bypass_damper",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "bypass_damper_state",
+                    "displayName": "ahu bypass damper state",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "vav_air_fan_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "air_fan_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "config_cooling_tower",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "condenser_water_leaving_temp_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "config_vav",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "air_flow_effective_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "air_flow_max_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "air_flow_min_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "air_flow_reheating_max_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "air_flow_standby_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "duct_area_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "vav_mode_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_elec_meter_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "active_power_phase",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "active_power_total",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "apparent_power_phase",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "apparent_power_total",
+                    "displayName": "",
+                    "description": "typically measured in \"kVA\"",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "current_angle_avg",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "current_angle_phase",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "current_imbalance",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "current_mag_avg",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "current_mag_phase",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "current_thd_avg",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "current_thd_phase",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "energy_export",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "energy_import",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "energy_net",
+                    "displayName": "",
+                    "description": "typically measured in \"kWh\"",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "energy_power_phase",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "energy_power_total",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "freq",
+                    "displayName": "frequency",
+                    "description": "typically measured in \"Hz\"",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "pf_avg",
+                    "displayName": "power factor average",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "pf_phase",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "power_export",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "power_import",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "power_net",
+                    "displayName": "",
+                    "description": "typically measured in \"kW\"",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "reactive_power_phase",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "reactive_power_total",
+                    "displayName": "",
+                    "description": "typically measured in \"kVAR\"",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "volt_angle_avg",
+                    "displayName": "voltage phase angle",
+                    "description": " typically measured in \"deg\"",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "volt_angle_phase",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "volt_imbalance",
+                    "displayName": "voltage imbalance between phase",
+                    "description": "mesaure in %",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "volt_mag_avg",
+                    "displayName": "voltage magnitude average",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "volt_mag_phase",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "volt_thd_avg",
+                    "displayName": "voltage total harmonic distortion average",
+                    "description": "mesured in %",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "volt_thd_phase",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "condenser_water_valve_isolation_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "condenser_water_valve_isolation",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "steam_bypass_valve_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "is_primary_loop",
+                    "displayName": "",
+                    "description": "Indicates equipment and points which are associated with a chiller or boiler plant's primary loop - the pipework within the central plant.",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "is_secondary_loop",
+                    "displayName": "",
+                    "description": "Indicates equipment and points which are associated with a chiller or boiler plant's secondary loop - the pipework from the central plant to the building.",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "steam_bypass_valve_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "cooling_tower_fan_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "cooling_tower_fan",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "discharge_air_fan_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "discharge_air_fan",
+                    "displayName": "discharge air fan state/mode",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "vdf_speed_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "vdf_speed",
+                    "displayName": "vdf speed",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "steam_mixing_valve_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "is_primary_loop",
+                    "displayName": "",
+                    "description": "Indicates equipment and points which are associated with a chiller or boiler plant's primary loop - the pipework within the central plant.",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "is_secondary_loop",
+                    "displayName": "",
+                    "description": "Indicates equipment and points which are associated with a chiller or boiler plant's secondary loop - the pipework from the central plant to the building.",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "steam_mixing_valve_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "vav_reheat_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "reheat_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_heat_wheel",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "heatwheel_state",
+                    "displayName": "ahu heatwheel state",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "boiler_condensate_pump_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "condensate_pump_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "hot_water_mixing_valve_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "hot_water_mixing_valve_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "is_primary_loop",
+                    "displayName": "",
+                    "description": "Indicates equipment and points which are associated with a chiller or boiler plant's primary loop - the pipework within the central plant.",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "is_secondary_loop",
+                    "displayName": "",
+                    "description": "Indicates equipment and points which are associated with a chiller or boiler plant's secondary loop - the pipework from the central plant to the building.",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "config_chiller",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "chilled_water_leaving_temp_sp",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "boiler_enable_cmd",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "enable_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        }
+    ],
+    "ownerAttributes": [],
+    "sessionizers": [],
+    "orphans": {},
+    "tracked": {
+        "objectAttributes": []
+    }
+}
