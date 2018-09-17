@@ -940,15 +940,7 @@
                     }
                 },
                 {
-                    "key": "chilled_water_delta_temp_in_celsius",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "chilled_water_delta_temp_in_fahrenheit",
+                    "key": "chilled_water_delta_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -972,15 +964,7 @@
                     }
                 },
                 {
-                    "key": "chilled_water_entering_temp_in_celsius",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "chilled_water_entering_temp_in_fahrenheit",
+                    "key": "chilled_water_entering_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -1004,15 +988,7 @@
                     }
                 },
                 {
-                    "key": "chilled_water_leaving_temp_in_celsius",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "chilled_water_leaving_temp_in_fahrenheit",
+                    "key": "chilled_water_leaving_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -1068,15 +1044,7 @@
                     }
                 },
                 {
-                    "key": "chilled_water_delta_temp_in_celsius",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "chilled_water_delta_temp_in_fahrenheit",
+                    "key": "chilled_water_delta_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -1092,15 +1060,7 @@
                     }
                 },
                 {
-                    "key": "chilled_water_entering_temp_in_celsius",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "chilled_water_entering_temp_in_fahrenheit",
+                    "key": "chilled_water_entering_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -1124,15 +1084,7 @@
                     }
                 },
                 {
-                    "key": "chilled_water_leaving_temp_in_celsius",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "chilled_water_leaving_temp_in_fahrenheit",
+                    "key": "chilled_water_leaving_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -1172,15 +1124,7 @@
                     }
                 },
                 {
-                    "key": "condenser_refrig_temp_in_celsius",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "condenser_refrig_temp_in_fahrenheit",
+                    "key": "condenser_refrig_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -1204,15 +1148,7 @@
                     }
                 },
                 {
-                    "key": "condenser_water_entering_temp_in_celsius",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "condenser_water_entering_temp_in_fahrenheit",
+                    "key": "condenser_water_entering_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -1236,15 +1172,7 @@
                     }
                 },
                 {
-                    "key": "condenser_water_leaving_temp_in_celsius",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "condenser_water_leaving_temp_in_fahrenheit",
+                    "key": "condenser_water_leaving_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -1292,15 +1220,7 @@
                     }
                 },
                 {
-                    "key": "evaporator_refrig_temp_in_celsius",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "evaporator_refrig_temp_in_fahrenheit",
+                    "key": "evaporator_refrig_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -1388,16 +1308,8 @@
                     }
                 },
                 {
-                    "key": "return_air_temp_in_celsius",
-                    "displayName": "return air temperature in Celsius",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "return_air_temp_in_fahrenheit",
-                    "displayName": "return air temperature in Fahrenheit",
+                    "key": "return_air_temp",
+                    "displayName": "return air temperature",
                     "description": "",
                     "type": {
                         "highLevelType": "FLOAT"
@@ -1444,24 +1356,16 @@
                     }
                 },
                 {
+                    "key": "zone_air_temp",
+                    "displayName": "zone air temperature",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
                     "key": "zone_air_temp_effective_sp",
                     "displayName": "zone air temperature effective setpoint",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "zone_air_temp_in_celsius",
-                    "displayName": "zone air temperature in Celsius",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "zone_air_temp_in_fahrenheit",
-                    "displayName": "zone air temperature in Fahrenheit",
                     "description": "",
                     "type": {
                         "highLevelType": "FLOAT"
@@ -1524,15 +1428,7 @@
             "origin": "unscheduled",
             "timeseries": [
                 {
-                    "key": "flue_temp_in_celsius",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "TEXT"
-                    }
-                },
-                {
-                    "key": "flue_temp_in_fahrenheit",
+                    "key": "flue_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -1564,15 +1460,7 @@
                     }
                 },
                 {
-                    "key": "hot_water_delta_temp_in_celsius",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "hot_water_delta_temp_in_fahrenheit",
+                    "key": "hot_water_delta_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -1596,15 +1484,7 @@
                     }
                 },
                 {
-                    "key": "hot_water_entering_temp_in_celsius",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "hot_water_entering_temp_in_fahrenheit",
+                    "key": "hot_water_entering_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -1628,15 +1508,7 @@
                     }
                 },
                 {
-                    "key": "hot_water_leaving_temp_in_celsius",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "hot_water_leaving_temp_in_fahrenheit",
+                    "key": "hot_water_leaving_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -1844,16 +1716,8 @@
             "origin": "unscheduled",
             "timeseries": [
                 {
-                    "key": "mix_air_temp_in_celsius",
-                    "displayName": "mix air temperature in Celsius",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "mix_air_temp_in_fahrenheit",
-                    "displayName": "mix air temperature in Fahrenheit",
+                    "key": "mix_air_temp",
+                    "displayName": "mix air temperature",
                     "description": "",
                     "type": {
                         "highLevelType": "FLOAT"
@@ -1868,7 +1732,7 @@
             "origin": "unscheduled",
             "timeseries": [
                 {
-                    "key": "condensate_entering_temp_in_celsius",
+                    "key": "condensate_entering_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -1876,23 +1740,7 @@
                     }
                 },
                 {
-                    "key": "condensate_entering_temp_in_fahrenheit",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "flue_temp_in_celsius",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "TEXT"
-                    }
-                },
-                {
-                    "key": "flue_temp_in_fahrenheit",
+                    "key": "flue_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -1956,15 +1804,7 @@
                     }
                 },
                 {
-                    "key": "steam_delta_temp_in_celsius",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "steam_delta_temp_in_fahrenheit",
+                    "key": "steam_delta_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -2012,15 +1852,7 @@
                     }
                 },
                 {
-                    "key": "steam_leaving_temp_in_celsius",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "steam_leaving_temp_in_fahrenheit",
+                    "key": "steam_leaving_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -2052,15 +1884,7 @@
             "origin": "unscheduled",
             "timeseries": [
                 {
-                    "key": "chilled_water_leaving_temp_in_celsius",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "chilled_water_leaving_temp_in_fahrenheit",
+                    "key": "chilled_water_leaving_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -2076,7 +1900,7 @@
                     }
                 },
                 {
-                    "key": "condenser_water_entering_temp_in_celsius",
+                    "key": "condenser_water_entering_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -2084,23 +1908,7 @@
                     }
                 },
                 {
-                    "key": "condenser_water_entering_temp_in_fahrenheit",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "condenser_water_leaving_temp_in_celsius",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "condenser_water_leaving_temp_in_fahrenheit",
+                    "key": "condenser_water_leaving_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -2212,16 +2020,8 @@
                     }
                 },
                 {
-                    "key": "outside_air_temp_in_celsius",
-                    "displayName": "outside air temperature in Celsius",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "outside_air_temp_in_fahrenheit",
-                    "displayName": "outside air temperature in Fahrenheit",
+                    "key": "outside_air_temp",
+                    "displayName": "outside air temperature",
                     "description": "",
                     "type": {
                         "highLevelType": "FLOAT"
@@ -2444,16 +2244,8 @@
                     }
                 },
                 {
-                    "key": "discharge_air_temp_in_celsius",
-                    "displayName": "discharge air temperature in Celsius",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "discharge_air_temp_in_fahrenheit",
-                    "displayName": "discharge air temperature in Fahrenheit",
+                    "key": "discharge_air_temp",
+                    "displayName": "discharge air temperature",
                     "description": "",
                     "type": {
                         "highLevelType": "FLOAT"
@@ -2572,15 +2364,7 @@
                     }
                 },
                 {
-                    "key": "condenser_water_entering_temp_in_celsius",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "condenser_water_entering_temp_in_fahrenheit",
+                    "key": "condenser_water_entering_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -2604,15 +2388,7 @@
                     }
                 },
                 {
-                    "key": "condenser_water_leaving_temp_in_celsius",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "condenser_water_leaving_temp_in_fahrenheit",
+                    "key": "condenser_water_leaving_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
@@ -2772,16 +2548,8 @@
                     }
                 },
                 {
-                    "key": "discharge_air_temp_in_celsius",
-                    "displayName": "discharge air temperature in Celsius",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "discharge_air_temp_in_fahrenheit",
-                    "displayName": "discharge air temperature in Fahrenheit",
+                    "key": "discharge_air_temp",
+                    "displayName": "discharge air temperature",
                     "description": "",
                     "type": {
                         "highLevelType": "FLOAT"
@@ -2796,15 +2564,7 @@
                     }
                 },
                 {
-                    "key": "entering_air_temp_in_celsius",
-                    "displayName": "",
-                    "description": "",
-                    "type": {
-                        "highLevelType": "FLOAT"
-                    }
-                },
-                {
-                    "key": "entering_air_temp_in_fahrenheit",
+                    "key": "entering_air_temp",
                     "displayName": "",
                     "description": "",
                     "type": {
