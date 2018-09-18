@@ -1,0 +1,3051 @@
+{
+    "objectTypes": [
+        {
+            "key": "body_scale",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "units",
+                    "displayName": "",
+                    "description": " ",
+                    "type": {
+                        "highLevelType": "FLOAT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "air_quality_sensor",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "power_sources",
+                    "displayName": "",
+                    "description": " ",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "list"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "orfid_station",
+            "displayName": "Optical RFID Station",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "reading",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "BOOLEAN",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "tag_id",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "battery",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "battry_capacity",
+                    "displayName": "",
+                    "description": "the total capacity of battery in Amp Hours (Ah)",
+                    "type": {
+                        "highLevelType": "INT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "battry_material",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "battry_threashold",
+                    "displayName": "a percentage indicates if low battery",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "light",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "sensitivity",
+                    "displayName": "",
+                    "description": "the level at which the sensor detects a state change",
+                    "type": {
+                        "highLevelType": "FLOAT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "silent_time",
+                    "displayName": "",
+                    "description": "the period after which a state change report was sent where the Sensor state change is not reported",
+                    "type": {
+                        "highLevelType": "INT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "camera",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "power_sources",
+                    "displayName": "",
+                    "description": " ",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "list"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "body_thermometer",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "units",
+                    "displayName": "",
+                    "description": " ",
+                    "type": {
+                        "highLevelType": "FLOAT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "contact_sensor",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "power_sources",
+                    "displayName": "",
+                    "description": " ",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "list"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "lock",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "lock_code_list",
+                    "displayName": "possible codes that may be associated with a lock",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "list"
+                    }
+                },
+                {
+                    "key": "power_sources",
+                    "displayName": "",
+                    "description": " ",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "list"
+                    }
+                },
+                {
+                    "key": "sensitivity",
+                    "displayName": "",
+                    "description": "the level at which the sensor detects a state change",
+                    "type": {
+                        "highLevelType": "FLOAT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "silent_time",
+                    "displayName": "",
+                    "description": "the period after which a state change report was sent where the Sensor state change is not reported",
+                    "type": {
+                        "highLevelType": "INT",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "3dprinter",
+            "displayName": "3D Printer",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "3dprinttype",
+                    "displayName": "The type of 3D printing technology",
+                    "description": "One of the following values: \"Fused Filament Fabrication\", \"Fused Deposition Modeling\",\"Digital Light Processing\", \"Powder Bed & inkjet head 3D Printing\",\"Photopolymer Jetting Technology\",\"Laminated Object Manufacturing\",\"Stereolithography Apparatus\",\"Selective Laser Sintering\", \"Unknown\"",
+                    "type": {
+                        "highLevelType": "TEXT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "memorysize",
+                    "displayName": "the total memory size of the printer",
+                    "description": "The unit is MB",
+                    "type": {
+                        "highLevelType": "FLOAT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "precision",
+                    "displayName": "Accuracy granularity of the exposed value",
+                    "description": " ",
+                    "type": {
+                        "highLevelType": "FLOAT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "printsizex",
+                    "displayName": "maximum size of printing object in the direction of X-axis",
+                    "description": "The unit is mm",
+                    "type": {
+                        "highLevelType": "FLOAT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "printsizey",
+                    "displayName": "maximum size of printing object in the direction of Y-axis",
+                    "description": "The unit is mm",
+                    "type": {
+                        "highLevelType": "FLOAT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "printsizez",
+                    "displayName": "maximum size of printing object in the direction of Z-axis",
+                    "description": "The unit is mm",
+                    "type": {
+                        "highLevelType": "FLOAT",
+                        "containerType": "none"
+                    }
+                },
+                {
+                    "key": "wanconnected",
+                    "displayName": "connectivity capability of the 3D printer",
+                    "description": "If false, the printer does not have network facility to Wide Area Network such as internet and GSM",
+                    "type": {
+                        "highLevelType": "BOOLEAN",
+                        "containerType": "none"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "humidifier",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": [
+                {
+                    "key": "available_levels",
+                    "displayName": "levels that can be selected",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT",
+                        "containerType": "list"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "altimeter",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": []
+        },
+        {
+            "key": "atmospheric_pressure_sensor",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": []
+        },
+        {
+            "key": "audio_controller",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": []
+        },
+        {
+            "key": "blood_pressure_monitor",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": []
+        },
+        {
+            "key": "carbon_dioxide_sensor",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": []
+        },
+        {
+            "key": "carbon_monoxide_sensor",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": []
+        },
+        {
+            "key": "clock",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": []
+        },
+        {
+            "key": "cook_top",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": []
+        },
+        {
+            "key": "door",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": []
+        },
+        {
+            "key": "electric_vehicle_charging_connector",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": []
+        },
+        {
+            "key": "glass_break_sensor",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": []
+        },
+        {
+            "key": "glucose_meter",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": []
+        },
+        {
+            "key": "grinder",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": []
+        },
+        {
+            "key": "ice_maker",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": []
+        },
+        {
+            "key": "illuminance_sensor",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": []
+        },
+        {
+            "key": "refrigerator",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": []
+        },
+        {
+            "key": "room_ac",
+            "displayName": " ",
+            "description": "",
+            "objectAttributes": []
+        },
+        {
+            "key": "scanner",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": []
+        },
+        {
+            "key": "sleep_sensor",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": []
+        },
+        {
+            "key": "smoke_sensor",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": []
+        },
+        {
+            "key": "thermostat_with_fan",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": []
+        },
+        {
+            "key": "three_axis_sensor",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": []
+        },
+        {
+            "key": "touch_sensor",
+            "displayName": "",
+            "description": "",
+            "objectAttributes": []
+        }
+    ],
+    "eventTypes": [
+        {
+            "key": "set_air_flow_control",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "automode",
+                    "displayName": "Status of the automode feature",
+                    "description": "On/Off",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "direction",
+                    "displayName": "Directionality of the air flow",
+                    "description": "\"left\",\"right\",\"centre\"",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "range_max",
+                    "displayName": "maximun value of range",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "range_min",
+                    "displayName": "minimun value of range",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "speed_level",
+                    "displayName": "",
+                    "description": " speed level for the unit.",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_pan_tilt_zoom_values",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "pan",
+                    "displayName": "",
+                    "description": "in degrees",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "tilt",
+                    "displayName": "",
+                    "description": "in degrees",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "zoom_factor",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_three_axis_sensor_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "orientation_x_plane",
+                    "displayName": "The unit is in 'g'",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "orientation_y_plane",
+                    "displayName": "The unit is in 'g'",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "orientation_z_plane",
+                    "displayName": "The unit is in 'g'",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_automatic_document_feeder_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "current_adf_state",
+                    "displayName": "state of an automatic document feeder",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_grinder_values",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "coarseness",
+                    "displayName": "coarseness of the grounds",
+                    "description": "The higher the value, the less coarse.",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_button_switch",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "value",
+                    "displayName": "",
+                    "description": "means that the target has been sensed",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_info_from_body_thermometer",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "body_location",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "temperature",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "user_id",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_eco_mode_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "admin_forced",
+                    "displayName": "",
+                    "description": "indicates if that the value has been set by another party",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "modes",
+                    "displayName": "",
+                    "description": " restricted to the set of values given below: \"disabled\",\"enabled\",\"notsupported\"",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "supported_modes",
+                    "displayName": "",
+                    "description": " restricted to the set of values given below: \"disabled\",\"enabled\",\"notsupported\"",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_info_from_body_scale",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "body_fat",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "body_fat_free_mass",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "body_mass_index",
+                    "displayName": "BMI",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "body_soft_lean_mass",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "body_water",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "height",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "user_id",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "weight",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_air_flow",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "automode",
+                    "displayName": "Status of the automode feature",
+                    "description": "On/Off",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "direction",
+                    "displayName": "Directionality of the air flow",
+                    "description": "\"left\",\"right\",\"centre\"",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "range_max",
+                    "displayName": "maximun value of range",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "range_min",
+                    "displayName": "minimun value of range",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "speed_level",
+                    "displayName": "",
+                    "description": " speed level for the unit.",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_carbon_monoxide_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "value",
+                    "displayName": "",
+                    "description": "means that the target has been sensed",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_lock_state",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "lock_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_air_quality",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "contaminant_value",
+                    "displayName": "The measured or qualitative value for the contaminant.",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "contaminanttype",
+                    "displayName": "The contaminant being measured.",
+                    "description": "One of following value: \"CH2O\", \"CO2\",\"CO\", \"PM2.5\", \"PM10\",\"VOC\", \"Smoke\", \"Odor\", \"AirPollution\"",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "range_max",
+                    "displayName": "maximun value of range",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "range_min",
+                    "displayName": "minimun value of range",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "valuetype",
+                    "displayName": "Indicates whether the provided value is qualitative or measured.",
+                    "description": " \"Qualitative\" or \"Measured\"",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_clock_values",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "count_down",
+                    "displayName": "desired total seconds for countdown",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "date_time",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "DATETIME"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_heating_zone_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "heating_level",
+                    "displayName": "current heating level of the zone",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "max_heating_level",
+                    "displayName": "max level for the heating zone",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_color_chroma_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "csc_x",
+                    "displayName": "",
+                    "description": "X coordinate of colour space coordinates in CIE colour space.",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "csc_y",
+                    "displayName": "",
+                    "description": "Y coordinate of colour space coordinates in CIE colour space.",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "ct",
+                    "displayName": "Mired colour temperature",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "hue",
+                    "displayName": "hue angle",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "maximun_saturation",
+                    "displayName": "upper bound on the saturation supported by the Device",
+                    "description": "If not present the maximum value for saturation is 32767.",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "saturation",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_touch_sensor_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "value",
+                    "displayName": "",
+                    "description": "means that the target has been sensed",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_battery_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "charge",
+                    "displayName": "current battery charge level as a percentage",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "charging",
+                    "displayName": "",
+                    "description": " \"True\" indicating enabled",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "discharging",
+                    "displayName": "",
+                    "description": " \"True\" indicating enabled",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "low_battery",
+                    "displayName": "",
+                    "description": " \"True\" indicating low charge level based upon the battery threshold",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_geolocation_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "accuracy",
+                    "displayName": "accuracy level of the latitude and longitude coordinates",
+                    "description": "in metres(m)",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "alt",
+                    "displayName": "",
+                    "description": "The current height of the position in 'meter' ",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "altitude_accuracy",
+                    "displayName": " accuracy level of the altitude coordinates",
+                    "description": "in metres(m)",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "heading",
+                    "displayName": "direction of travel of device",
+                    "description": "in degrees",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "speed",
+                    "displayName": "",
+                    "description": "in metres/second",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_clock_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "count_down",
+                    "displayName": "desired total seconds for countdown",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "date_time",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "DATETIME"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_acceleration",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "acceleration",
+                    "displayName": "a measure of proper acceleration (g force)",
+                    "description": "sensed acceleration experienced in 'g'",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_binary_switch_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "value",
+                    "displayName": "",
+                    "description": "means that the target has been sensed",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_color_rgb_values",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "rgb_b",
+                    "displayName": "Blue",
+                    "description": "colour in the RGB space",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "rgb_g",
+                    "displayName": "Green",
+                    "description": "colour in the RGB space",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "rgb_r",
+                    "displayName": "Red",
+                    "description": "colour in the RGB space",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_operation_mode",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "mode",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_energy_consumption",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "energy",
+                    "displayName": "",
+                    "description": " in Watt Hours(Wh)",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "power",
+                    "displayName": "",
+                    "description": " in Watts(W)",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_eco_mode_values",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "admin_forced",
+                    "displayName": "",
+                    "description": "indicates if that the value has been set by another party",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "modes",
+                    "displayName": "",
+                    "description": " restricted to the set of values given below: \"disabled\",\"enabled\",\"notsupported\"",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "supported_modes",
+                    "displayName": "",
+                    "description": " restricted to the set of values given below: \"disabled\",\"enabled\",\"notsupported\"",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_drlc_status",
+            "displayName": "",
+            "description": "get Demand Response Load Control status",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "dr_level",
+                    "displayName": "",
+                    "description": "iindicates the level/strength of required load shed/DR response from the Device; [0:0%,1:30%,2:50%,3:70%]",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "drtype",
+                    "displayName": "Appliance Load Reduction Type",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "duration",
+                    "displayName": "",
+                    "description": "in minutes",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "mandate",
+                    "displayName": "",
+                    "description": "indicates whether the User can override the DR request",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "override",
+                    "displayName": "",
+                    "description": "indicates whether the consumer has overridden the request",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "start",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "DATETIME"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_drlc_values",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "dr_level",
+                    "displayName": "",
+                    "description": "iindicates the level/strength of required load shed/DR response from the Device; [0:0%,1:30%,2:50%,3:70%]",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "drtype",
+                    "displayName": "Appliance Load Reduction Type",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "duration",
+                    "displayName": "",
+                    "description": "in minutes",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "mandate",
+                    "displayName": "",
+                    "description": "indicates whether the User can override the DR request",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "override",
+                    "displayName": "",
+                    "description": "indicates whether the consumer has overridden the request",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "start",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "DATETIME"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_night_mode_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "night_mode",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_color_chroma_values",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "csc_x",
+                    "displayName": "",
+                    "description": "X coordinate of colour space coordinates in CIE colour space.",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "csc_y",
+                    "displayName": "",
+                    "description": "Y coordinate of colour space coordinates in CIE colour space.",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "ct",
+                    "displayName": "Mired colour temperature",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "hue",
+                    "displayName": "hue angle",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "maximun_saturation",
+                    "displayName": "upper bound on the saturation supported by the Device",
+                    "description": "If not present the maximum value for saturation is 32767.",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "saturation",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_ice_maker_values",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "ice_maker_status",
+                    "displayName": "Ice Maker status",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_dimming_level",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "dimming_setting",
+                    "displayName": "dimming level",
+                    "description": "0 means total dimming; a value of 100 means no dimming",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "dimming_step",
+                    "displayName": "",
+                    "description": "the increment between dimmer values",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_button_switch_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "value",
+                    "displayName": "",
+                    "description": "means that the target has been sensed",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_audio_control",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "mute",
+                    "displayName": "",
+                    "description": "true means that the device is muted",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "volume",
+                    "displayName": "percentage [0,100]",
+                    "description": "0 means no sound produced",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_contact_status",
+            "displayName": "",
+            "description": " Typical use case is in Security Systems detecting window or door open",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "value",
+                    "displayName": "",
+                    "description": "means that the target has been sensed",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_motion_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "motion",
+                    "displayName": "",
+                    "description": "A value of 'true' means that motion has been sensed.",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_ice_maker_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "ice_maker_status",
+                    "displayName": "Ice Maker status",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_electrical_energy_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "current",
+                    "displayName": "",
+                    "description": " in Amps(A)",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "frequency",
+                    "displayName": "",
+                    "description": " in Hertz(Hz)",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "voltage",
+                    "displayName": "",
+                    "description": " in Volts(V)",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_carbon_dioxide_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "value",
+                    "displayName": "",
+                    "description": "means that the target has been sensed",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_humidifier_values",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "target_level",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_operational_state",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "operational_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_color_rgb_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "rgb_b",
+                    "displayName": "Blue",
+                    "description": "colour in the RGB space",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "rgb_g",
+                    "displayName": "Green",
+                    "description": "colour in the RGB space",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "rgb_r",
+                    "displayName": "Red",
+                    "description": "colour in the RGB space",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_door_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "open_alarm",
+                    "displayName": "",
+                    "description": "indicates if open alarm is active",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "open_duration",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "DURATION"
+                    }
+                },
+                {
+                    "key": "open_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_open_level_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "open_level",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_orfid_station_values",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "action_request",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "event",
+                    "displayName": "",
+                    "description": "Indicates if alarming the issue when additional action is requested for the tagged product",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_smoke_sensor_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "value",
+                    "displayName": "",
+                    "description": "means that the target has been sensed",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_brightness_level",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "brightness",
+                    "displayName": "",
+                    "description": "brightness value in the range 0-100",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_auto_focus_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "auto_focus",
+                    "displayName": "an auto focus on/off feature",
+                    "description": "true means that the switch is on",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_operational_state",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "operational_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_humidity_level_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "desired_humidity",
+                    "displayName": "desired target relative humidity",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "humidity",
+                    "displayName": "percentage measured relative humidity",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_altimeter_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "alt",
+                    "displayName": "",
+                    "description": "The current height of the position in 'meter' ",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_energy_overload_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "is_overload",
+                    "displayName": "",
+                    "description": "indicates whether an energy overload detector/circuit breaker is currently tripped",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_brightness_level",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "brightness",
+                    "displayName": "",
+                    "description": "brightness value in the range 0-100",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_operation_mode",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "mode",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_grinder_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "coarseness",
+                    "displayName": "coarseness of the grounds",
+                    "description": "The higher the value, the less coarse.",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "remaining",
+                    "displayName": "percentatge remaining life",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_brewing_values",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "amount_requested",
+                    "displayName": "",
+                    "description": "The amount requested is in ml",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "strength",
+                    "displayName": "strength of a brewed drink",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "strength_range_max",
+                    "displayName": "maximun strength of a brewed drink",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "strength_range_min",
+                    "displayName": "minimun strength of a brewed drink",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_auto_white_balance",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "auto_white_balance",
+                    "displayName": "an auto balance on/off feature",
+                    "description": "true means that the switch is on",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_vehicle_connector_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "connected",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "rated_charging_capacity",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "rated_dicharging_capacity",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_foaming_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "foam_strength",
+                    "displayName": "foam strength of the liquid",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_orfid_station_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "action_request",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "event",
+                    "displayName": "",
+                    "description": "Indicates if alarming the issue when additional action is requested for the tagged product",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_open_level",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "open_level",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_ramp_time",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "ramp_time",
+                    "displayName": "the Ramp Time of a dimming function",
+                    "description": "actual speed of changing between 2 dimming values, in milliseconds(ms)",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_door_values",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "open_alarm",
+                    "displayName": "",
+                    "description": "indicates if open alarm is active",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_consumable_status",
+            "displayName": "status of the thing being consumed as defined by the Smart Home Device Specification",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "order_percentage",
+                    "displayName": "percentage life at which replacement or replenishment is recommended by the manufacturer",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "remaining",
+                    "displayName": "percentatge remaining life",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "type_of_consumable",
+                    "displayName": "thing being consumed as defined by the Smart Home Device Specificatione",
+                    "description": "such as filter material, printer toner etc",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "url",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "used_time",
+                    "displayName": "elapsed time of consumable being in use in seconds",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_value_conditional_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "max_notify_period",
+                    "displayName": "",
+                    "description": "the maxnotifyperiod (time in ms (milliseconds)) elapses then a notification must be sent. \nThe maxnotifyperiod timer resets each time a notification is sent",
+                    "type": {
+                        "highLevelType": "LONG"
+                    }
+                },
+                {
+                    "key": "min_notify_period",
+                    "displayName": "",
+                    "description": "the minimum time in ms (milliseconds) that must elapse before a notification is sent",
+                    "type": {
+                        "highLevelType": "LONG"
+                    }
+                },
+                {
+                    "key": "threshold",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_sleep_sensor_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "value",
+                    "displayName": "",
+                    "description": "means that the target has been sensed",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_blood_pressure_and_pulse_rate",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "diastolic",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "pulse_rate",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "systolic",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "user_id",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_glucose_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "carb",
+                    "displayName": "Context Carbohydrates",
+                    "description": "in grams(g)",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "excercise",
+                    "displayName": "level of exercise undertaken in percentage",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "glucose",
+                    "displayName": "a person's Glucose level",
+                    "description": "in mg/dl",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "hba1c",
+                    "displayName": "Hemoglobin Bound to Glucose A1c Form (HbA1c)",
+                    "description": "in percentage",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "health",
+                    "displayName": "health context",
+                    "description": "'minor' and 'major' are related to the general health or the level of illness of the person; 'menses' refers to the female menstrual cycle; 'stress' refers to physiological or psychological stress.",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "meal",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "medication",
+                    "displayName": "",
+                    "description": "in milligrams(mg)",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "regimen",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "sample_location",
+                    "displayName": "",
+                    "description": "a site on the body",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "tester",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "user_id",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_ramp_time",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "ramp_time",
+                    "displayName": "the Ramp Time of a dimming function",
+                    "description": "actual speed of changing between 2 dimming values, in milliseconds(ms)",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_humidifier_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "target_level",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_movement",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "movement",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_energy_generation",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "energy_generated",
+                    "displayName": "",
+                    "description": " in Watt Hours(Wh)",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_audio_control_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "mute",
+                    "displayName": "",
+                    "description": "true means that the device is muted",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "volume",
+                    "displayName": "percentage [0,100]",
+                    "description": "0 means no sound produced",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_uv_radiation_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "measurement",
+                    "displayName": "",
+                    "description": "current measured UV Index",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_liquid_level",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "desired_level",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_heart_rate_zone",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "heart_rate_zone",
+                    "displayName": "a measured heart rate by the current Zone using the Zoladz method",
+                    "description": "The Zoladz method defines Zones based on maximum heart rate; Zone 1 is the lowest, Zone 5 is the highest.",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_refrigeration_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "defrost",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "filter",
+                    "displayName": "",
+                    "description": "the percentage life time remaining for the water filter",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "rapide_cool",
+                    "displayName": "",
+                    "description": "i",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "rapide_freeze",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_auto_white_balance_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "auto_white_balance",
+                    "displayName": "an auto balance on/off feature",
+                    "description": "true means that the switch is on",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_auto_focus",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "auto_focus",
+                    "displayName": "an auto focus on/off feature",
+                    "description": "true means that the switch is on",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_print_queue_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "queue_item",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                },
+                {
+                    "key": "queue_status",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_brewing_state",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "amount_requested",
+                    "displayName": "",
+                    "description": "The amount requested is in ml",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "strength",
+                    "displayName": "strength of a brewed drink",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "strength_range_max",
+                    "displayName": "maximun strength of a brewed drink",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "strength_range_min",
+                    "displayName": "minimun strength of a brewed drink",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_delay_defrost_values",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "interval",
+                    "displayName": "",
+                    "description": "time in minutes of the period that starts at start_time; interval and stop_time are mutually exclusive; they cannot both be present",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "start_time",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TIME"
+                    }
+                },
+                {
+                    "key": "status",
+                    "displayName": "",
+                    "description": "'true' means function is on;'false' means that defrost is scheduled as part of normal device operation",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "stop_time",
+                    "displayName": "stop time for the interval in which defrost shall not occur",
+                    "description": "stop_time and interval are mutually exclusive; they cannot both be present",
+                    "type": {
+                        "highLevelType": "TIME"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_foaming_values",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "foam_strength",
+                    "displayName": "foam strength of the liquid",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_movement_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "movement",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_delay_defrost_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "interval",
+                    "displayName": "",
+                    "description": "time in minutes of the period that starts at start_time; interval and stop_time are mutually exclusive; they cannot both be present",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "start_time",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TIME"
+                    }
+                },
+                {
+                    "key": "status",
+                    "displayName": "",
+                    "description": "'true' means function is on;'false' means that defrost is scheduled as part of normal device operation",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "stop_time",
+                    "displayName": "stop time for the interval in which defrost shall not occur",
+                    "description": "stop_time and interval are mutually exclusive; they cannot both be present",
+                    "type": {
+                        "highLevelType": "TIME"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_night_mode",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "night_mode",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_refrigeration_values",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "defrost",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "rapide_cool",
+                    "displayName": "",
+                    "description": "i",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                },
+                {
+                    "key": "rapide_freeze",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_value_conditional_values",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "max_notify_period",
+                    "displayName": "",
+                    "description": "the maxnotifyperiod (time in ms (milliseconds)) elapses then a notification must be sent. \nThe maxnotifyperiod timer resets each time a notification is sent",
+                    "type": {
+                        "highLevelType": "LONG"
+                    }
+                },
+                {
+                    "key": "min_notify_period",
+                    "displayName": "",
+                    "description": "the minimum time in ms (milliseconds) that must elapse before a notification is sent",
+                    "type": {
+                        "highLevelType": "LONG"
+                    }
+                },
+                {
+                    "key": "threshold",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_glass_break_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "value",
+                    "displayName": "",
+                    "description": "means that the target has been sensed",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_liquid_level_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "current_level",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "desired_level",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_magnetic_field_direction",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "h_x",
+                    "displayName": "direction of the Earth's magnetic field in X",
+                    "description": "in Amperes per metre(A/m)",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "h_y",
+                    "displayName": "direction of the Earth's magnetic field in Y",
+                    "description": "in Amperes per metre(A/m)",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "h_z",
+                    "displayName": "direction of the Earth's magnetic field in Z",
+                    "description": "in Amperes per metre(A/m)",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_atmospheric_pressure",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "atmospheric_pressure",
+                    "displayName": "Mean Sea Level Pressure",
+                    "description": "the atmospheric pressure in hPa (hectoPascals)\n Note that hPa and the also commonly used unit of millibars (mbar) are numerically equivalent.",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_pulse_rate",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "pulse_rate",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_presence_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "value",
+                    "displayName": "",
+                    "description": "means that the target has been sensed",
+                    "type": {
+                        "highLevelType": "BOOLEAN"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_signal_strength_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "lqi",
+                    "displayName": "Link Quality Indicator",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "rssi",
+                    "displayName": "received signal strength indicator",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_dimming_level",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "dimming_setting",
+                    "displayName": "dimming level",
+                    "description": "0 means total dimming; a value of 100 means no dimming",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                },
+                {
+                    "key": "dimming_step",
+                    "displayName": "",
+                    "description": "the increment between dimmer values",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_lock_state",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "lock_state",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_pan_tilt_zoom_status",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "pan",
+                    "displayName": "",
+                    "description": "in degrees",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "tilt",
+                    "displayName": "",
+                    "description": "in degrees",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "zoom_factor",
+                    "displayName": "",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "TEXT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_electrical_energy_values",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "desired_current",
+                    "displayName": "",
+                    "description": " in Amps(A)",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                },
+                {
+                    "key": "desired_voltage",
+                    "displayName": "",
+                    "description": " in Volts(V)",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "get_illuminance",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "illuminance",
+                    "displayName": "luminous flux per unit area in lux",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "FLOAT"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "set_humidity_level",
+            "displayName": "",
+            "description": "",
+            "origin": "unscheduled",
+            "timeseries": [
+                {
+                    "key": "desired_humidity",
+                    "displayName": "desired target relative humidity",
+                    "description": "",
+                    "type": {
+                        "highLevelType": "INT"
+                    }
+                }
+            ]
+        }
+    ],
+    "ownerAttributes": [],
+    "sessionizers": [],
+    "orphans": {},
+    "tracked": {
+        "objectAttributes": []
+    }
+}
