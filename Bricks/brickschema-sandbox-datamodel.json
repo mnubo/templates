@@ -1,0 +1,140 @@
+{
+    "objectTypes": [
+        {
+            "key": "boiler",
+            "displayName": "boiler",
+            "description": "boiler",
+            "objectAttributes": []
+        },
+        {
+            "key": "demandresponse",
+            "displayName": "demandresponse",
+            "description": "demandresponse",
+            "objectAttributes": []
+        },
+        {
+            "key": "emergency_generator",
+            "displayName": "emergency generator",
+            "description": "emergency generator",
+            "objectAttributes": []
+        },
+        {
+            "key": "filter",
+            "displayName": "filter",
+            "description": "filter",
+            "objectAttributes": []
+        },
+        {
+            "key": "fire_control_panel",
+            "displayName": "fire control panel",
+            "description": "fire control panel",
+            "objectAttributes": []
+        },
+        {
+            "key": "fume_hood",
+            "displayName": "fume hood",
+            "description": "fume hood",
+            "objectAttributes": []
+        },
+        {
+            "key": "heat_exchanger",
+            "displayName": "heat exchanger",
+            "description": "heat exchanger",
+            "objectAttributes": []
+        },
+        {
+            "key": "hvac",
+            "displayName": "hvac",
+            "description": "hvac",
+            "objectAttributes": []
+        },
+        {
+            "key": "lighting_system",
+            "displayName": "lighting system",
+            "description": "lighting system",
+            "objectAttributes": []
+        },
+        {
+            "key": "power_system",
+            "displayName": "power system",
+            "description": "power system",
+            "objectAttributes": []
+        },
+        {
+            "key": "pump",
+            "displayName": "pump",
+            "description": "pump",
+            "objectAttributes": []
+        },
+        {
+            "key": "return_fan",
+            "displayName": "return fan",
+            "description": "return fan",
+            "objectAttributes": []
+        },
+        {
+            "key": "supply_fan",
+            "displayName": "supply fan",
+            "description": "supply fan",
+            "objectAttributes": []
+        },
+        {
+            "key": "vfd",
+            "displayName": "vfd",
+            "description": "vfd",
+            "objectAttributes": []
+        }
+    ],
+    "eventTypes": [
+        {
+            "key": "emergency_generator_alarm",
+            "displayName": "Emergency Generator Alarm",
+            "description": "Emergency Generator Alarm",
+            "origin": "fault",
+            "timeseries": []
+        },
+        {
+            "key": "emergency_generator_status",
+            "displayName": "Emergency Generator Status",
+            "description": "Emergency Generator Status",
+            "origin": "unscheduled",
+            "timeseries": []
+        },
+        {
+            "key": "fume_hood_alarm",
+            "displayName": "Fume Hood Alarm",
+            "description": "Fume Hood Alarm",
+            "origin": "fault",
+            "timeseries": []
+        },
+        {
+            "key": "pump_alarm",
+            "displayName": "Pump Alarm",
+            "description": "Pump Alarm",
+            "origin": "fault",
+            "timeseries": []
+        },
+        {
+            "key": "supply_air_integrative_gain_factor",
+            "displayName": "Supply Air Integrative Gain Factor",
+            "description": "Supply Air Integrative Gain Factor",
+            "origin": "owner",
+            "timeseries": []
+        },
+        {
+            "key": "vfd_alarm",
+            "displayName": "VFD Alarm",
+            "description": "VFD Alarm",
+            "origin": "fault",
+            "timeseries": []
+        }
+    ],
+    "ownerAttributes": [],
+    "sessionizers": [],
+    "orphans": {},
+    "tracked": {
+        "objectAttributes": []
+    },
+    "enrichers": {},
+    "reservedEnrichersFields": []
+}
